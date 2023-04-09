@@ -1,0 +1,28 @@
+{
+  "name": "demo-node-k6-test",
+  "version": "1.0.0",
+  "scripts": {
+    "prettier": "prettier --write \"**/*.ts\" ",
+    "build": "webpack",
+    "test": "k6 run ./dist/index.js",
+    "/test": "k6 run ./dist/index.js --out json=output/test.json",
+    "//test": "k6 run ./dist/first.js && k6 run ./dist/second.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/plugin-transform-runtime": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-typescript": "^7.21.4",
+    "@types/k6": "^0.43.2",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "core-js": "^3.30.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "fork-ts-checker-webpack-plugin": "^8.0.0",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.4",
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
