@@ -23,7 +23,7 @@ module.exports = {
     libraryTarget: 'commonjs',
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    extensions: ['.js','.ts'],
     alias: {
       '@': path.resolve(__dirname, 'src'),
     },
