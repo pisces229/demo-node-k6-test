@@ -21,7 +21,7 @@ export default (data: JSONObject) => {
   // console.log(data);
   const response = http.get(CONFIG.TEST_URL);
   check(response, { 'status was 200': (response) => response.status === 200 });
-  check(response, { 'status was 404': (response) => response.status === 404 });
+  // check(response, { 'status was 404': (response) => response.status === 404 });
   sleep(1);
 };
 // 4. teardown code

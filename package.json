@@ -6,7 +6,13 @@
     "build": "webpack",
     "test": "k6 run ./dist/index.js",
     "/test": "k6 run ./dist/index.js --out json=output/test.json",
-    "//test": "k6 run ./dist/first.js && k6 run ./dist/second.js"
+    "//test": "k6 run ./dist/first.js && k6 run ./dist/second.js",
+    "test:load": "k6 run ./dist/index-load.js",
+    "test:sample-load-test": "k6 run ./dist/sample-load-test.js",
+    "test:sample-smoke-test": "k6 run ./dist/sample-smoke-test.js",
+    "test:sample-soak-test": "k6 run ./dist/sample-soak-test.js",
+    "test:sample-spike-test": "k6 run ./dist/sample-spike-test.js",
+    "test:sample-stress-test": "k6 run ./dist/sample-stress-test.js"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
